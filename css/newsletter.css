@@ -17,6 +17,7 @@
    --white: hsl(0, 0%, 100%);
 }
 
+
 body{
    display: flex;
    justify-content: center;
@@ -26,8 +27,9 @@ body{
    width: 100%;
    background-color: var(--dark-grey);
    font-family: "roboto" sans-serif;
-
+   
 }
+
 
 p{
    font-size: 16px;
@@ -53,6 +55,7 @@ p{
    /* background-color: red; */
    border-radius: 10px ;
    box-shadow: .5px 10px 5px #00000080;
+   padding: 40px 60px;
 }
 
 .form_container.hide{
@@ -88,19 +91,22 @@ p{
 
 }
 
-.writeup-content ul{
-      margin-bottom: 3rem;
+
+.writeup-content .list-container{
+   margin-bottom: 3rem;
 
 }
-.writeup-content ul li i{
-   color: var(--primary-color);
-   margin-right: 1rem;
-}
 
-.writeup-content ul li{
+.list-container .list-wrapper{
+   display: flex;
    margin-bottom: 1rem;
    font-weight: 400;
    font-size: 16px;
+}
+
+.list-container .list-wrapper i{
+ color: var(--primary-color);
+   margin-right: 1rem;
 }
 
 
@@ -123,8 +129,6 @@ form input, form button{
    margin-bottom: 1.5rem;
    font-size: 16px;
    border: 1px solid var(--grey);
-
-   /* border: none; */
 }
 
 /* styling for error */
@@ -142,7 +146,7 @@ form button{
    outline: none;
    background-color: var(--darker-grey);
    color: var(--white);
-    cursor: pointer;
+   cursor: pointer;
 }
 
 
@@ -160,7 +164,6 @@ form button:hover, .success-message button:hover{
    width: 40%;
    height: 70%;
    object-fit: cover;
-   /* height: 70%; */
 }
 
 
@@ -220,13 +223,15 @@ form button:hover, .success-message button:hover{
 
 
 
-/* Responsive part */
+/* Responsive part */ 
 @media (max-width: 768px) {
    .form_container{ 
       flex-direction: column-reverse;
+      justify-content: center;
       padding: 0;
       margin: 0;
       height: 770px;
+
    }
 
    .writeup-content h1{
@@ -238,9 +243,10 @@ form button:hover, .success-message button:hover{
 
    .writeup-content{
       display: flex;
+      justify-content: center;
       width: 100%;
-      padding: 0 1rem;
-      /* background-color: red; */
+      padding: 10px 20px;
+
    }
 
    .img-content {
@@ -248,19 +254,23 @@ form button:hover, .success-message button:hover{
       width: 100%;
       object-fit: cover;
       height: 100%;
-      /* padding-right: 0rem; */
 
    }
 
+   .img-content img{
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      object-fit: cover;
 
-   .writeup-content ul li {
-      
-      margin-right: 1rem;
-      /* width: 95%; */
+   }
+
+   form button{
+      margin-bottom: 4rem;
    }
    
+   
    .attribution { 
-      margin-top: 0rem;
       display: none;
    }
 
