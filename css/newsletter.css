@@ -161,8 +161,8 @@ form button:hover, .success-message button:hover{
 
 .img-content{
    content: url("../assets/images/illustration-sign-up-desktop.svg");
-   width: 40%;
-   height: 70%;
+   width: 50%;
+   height: 95%;
    object-fit: cover;
 }
 
